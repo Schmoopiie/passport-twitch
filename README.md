@@ -28,7 +28,8 @@ accepts these credentials and calls `done` providing a user, as well as
     passport.use(new TwitchStrategy({
         clientID: TWITCH_CLIENT_ID,
         clientSecret: TWITCH_CLIENT_SECRET,
-        callbackURL: "http://127.0.0.1:3000/auth/twitch/callback"
+        callbackURL: "http://127.0.0.1:3000/auth/twitch/callback",
+        scope: "user_read"
       },
       function(accessToken, refreshToken, profile, done) {
         User.findOrCreate({ twitchId: profile.id }, function (err, user) {
