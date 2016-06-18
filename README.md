@@ -59,6 +59,13 @@ app.get("/auth/twitch/callback", passport.authenticate("twitch", { failureRedire
 });
 ```
 
+Optionally, the `forceVerify` option can be set to `true` to indicate
+that the user should be re-prompted for authorization:
+
+```javascript
+app.get("/auth/twitch", passport.authenticate("twitch", {forceVerify: true}));
+```
+
 ## Example
 
 ```javascript
