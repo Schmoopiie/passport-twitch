@@ -1,6 +1,6 @@
 {
   "name": "passport-twitch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Twitch (OAuth) authentication strategies for Passport.",
   "keywords": [
     "passport",
