@@ -33,7 +33,7 @@ passport.use(new twitchStrategy({
     clientID: TWITCH_CLIENT_ID,
     clientSecret: TWITCH_CLIENT_SECRET,
     callbackURL: "http://127.0.0.1:3000/auth/twitch/callback",
-    scope: "user_read"
+    scope: "user:read:email analytics:read:games"
   },
   function(accessToken, refreshToken, profile, done) {
     User.findOrCreate({ twitchId: profile.id }, function (err, user) {
@@ -92,7 +92,7 @@ passport.use(new twitchStrategy({
     clientID: "098f6bcd4621d373cade4e832627b4f6",
     clientSecret: "4eb20288afaed97e82bde371260db8d8",
     callbackURL: "http://127.0.0.1:3000/auth/twitch/callback",
-    scope: "user_read"
+    scope: "user:read:email analytics:read:games"
   },
   function(accessToken, refreshToken, profile, done) {
     // Suppose we are using mongo..
