@@ -1,6 +1,6 @@
 {
   "name": "passport-twitch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Twitch (OAuth) authentication strategies for Passport.",
   "keywords": [
     "passport",
@@ -33,14 +33,14 @@
   ],
   "main": "./lib/passport-twitch",
   "dependencies": {
-    "passport-oauth2": "^1.1.2",
-    "pkginfo": "0.2.x"
+    "passport-oauth2": "^1.7.0",
+    "pkginfo": "0.4.1"
   },
   "devDependencies": {
-    "vows": "0.6.x"
+    "vows": "0.8.3"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.17.0"
   },
   "maintainers": [
     {
